@@ -20,7 +20,7 @@ describe(List) do
   describe("#name") do
     it('tells you its name') do
       list = List.new({:name => "Epicodus stuff", :id => nil})
-      expec(list.name()).to(eq("Epicodus stuff"))
+      expect(list.name()).to(eq("Epicodus stuff"))
     end
   end
 
@@ -44,7 +44,7 @@ describe(List) do
     it('is the same list if it has the same name') do
       list1 = List.new({:name => "Epicodus stuff", :id => nil})
       list2 = List.new({:name => "Epicodus stuff", :id => nil})
-      expec(list1).to(eq(list2))
+      expect(list1).to(eq(list2))
     end
   end
 
