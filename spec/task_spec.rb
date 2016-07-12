@@ -20,7 +20,7 @@ describe(Task) do
 
   describe("#description") do
     it("lets you give it a description") do
-      test_task = Task.new({:description => :"wash the lion"})
+      test_task = Task.new({:description => "wash the lion"})
       expect(test_task.description()).to(eq("wash the lion"))
     end
   end
